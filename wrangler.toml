@@ -1,0 +1,14 @@
+name = "cloud-migration"
+main = ".vercel/output/static/index.html"
+compatibility_date = "2024-07-24"
+
+[build]
+command = "npm run build"
+publish = ".vercel/output/static"
+
+[build.upload]
+format = "modules"
+main = ".vercel/output/static/_worker.js"
+
+[[runs]]
+command = "npm run dev"

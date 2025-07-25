@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build && next-on-pages",
+    "build": "next build && npx @cloudflare/next-on-pages",
     "dev": "next dev -p 3002",
     "lint": "next lint",
-    "start": "next start",
-    "deploy": "wrangler pages deploy .vercel/output/static --project-name=Cloud_Migration"
+    "start": "next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
